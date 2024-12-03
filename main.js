@@ -209,7 +209,7 @@ async function loadShaders(vUrl, fUrl) {
   return {vertex, fragment}
 }
 
-loadShaders('/shaders/vertex.glsl', '/shaders/fragment.glsl').then((data) => {
+loadShaders('/vertex.glsl', '/fragment.glsl').then((data) => {
   const app = new Sketch({
     dom: document.querySelector('.canvas-container'),
     image: {
